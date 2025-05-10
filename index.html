@@ -101,5 +101,15 @@
       </a>
     </p>
   </div>
+    <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var waButton = document.querySelector('.cta-button');
+      if (waButton) {
+        waButton.addEventListener('click', function () {
+          ttq.track('Lead');
+        });
+      }
+    });
+  </script>
 </body>
 </html>
